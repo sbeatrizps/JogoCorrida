@@ -15,7 +15,7 @@ class Program
         jogo.IniciaJogo();
         jogo.Carro.PosicaoX = jogo.PosicionaObjeto(1);
         
-        jogo.Velocidade = 200;
+        jogo.Velocidade = 10;
         var tempoUltimaMovimentacao = DateTime.Now;
 
         for(; ; )
@@ -33,6 +33,7 @@ class Program
 
             if((DateTime.Now - tempoUltimaMovimentacao).Microseconds >= jogo.Velocidade)
             {
+                tempoUltimaMovimentacao = DateTime.Now;
                 jogo.MovimentaObstaculos();
             }
 
