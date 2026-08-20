@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="JogoCorrida/JogoCorrida.csproj" />
   <Project Path="JogoCorridaConsoleApp/JogoCorridaConsoleApp.csproj" Id="c4f9c672-22d5-4899-8d63-c2b4a84d126c" />
+  <Project Path="JogoCorridaWinFormsApp/JogoCorridaWinFormsApp.csproj" Id="3d04060c-35a0-4fab-9bf4-66acc5a8e8b2" />
 </Solution>

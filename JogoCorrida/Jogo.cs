@@ -13,16 +13,16 @@
         public int Faixa1Fim { get; set; }
         public int Faixa2Inicio { get; set; }
         public int Faixa2Fim { get; set; }
-        public int YMaximo { get; set; } = 50;
+        public int YMaximo { get; set; } = 550;
 
         public void IniciaJogo()
         {
             Carro = new Elemento();
             Carro.Tipo = TipoElemento.Carro;
             Carro.PosicaoX = PosicionaObjeto(1);
-            Carro.PosicaoY = YMaximo - 1;
+            Carro.PosicaoY = YMaximo - 180;
 
-            Obstaculos = FabricaObstaculos(3, 3, 6);
+            Obstaculos = FabricaObstaculos(3, 120, 200);
         }
 
         public List<Elemento> FabricaObstaculos(int qtd, int dmin, int dmax)
